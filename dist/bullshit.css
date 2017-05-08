@@ -1,0 +1,97 @@
+body {
+	background-color: #000;
+}
+
+.test {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+
+.header {
+	width: 100%;
+	height: 500px
+}
+
+.splash {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-radius: 200%;
+	opacity: .20;
+}
+
+#splash-first {
+	box-shadow: 0 0 195vmax 65vmax #0f0f3f;
+	animation: splash-first-movement 5s 0s ease-in-out infinite;
+}
+
+#splash-second {
+	box-shadow: 0 0 195vmax 65vmax darkviolet;
+	animation: splash-second-movement 11s 0s ease-in-out infinite;
+}
+
+#splash-third {
+	box-shadow: 0 0 195vmax 65vmax cyan;
+	animation: splash-third-movement 29s 0s ease-in-out infinite;
+}
+
+@keyframes splash-first-movement {
+	0% {
+		top: 0;
+		left: 70%;
+	}
+	25% {
+		left: 15%;
+	}
+	50% {
+		top: 100%;
+	}
+	75% {
+		left: 85%;
+	}
+	100% {
+		top: 0;
+		left: 50%;
+	}
+}
+
+@keyframes splash-second-movement {
+	0% {
+		top: 50%;
+		left: 85%;
+	}
+	25% {
+		top:  100%;
+	}
+	50% {
+		left: 15%;
+	}
+	75% {
+		top: 0;
+	}
+	100% {
+		top: 50%;
+		left: 85%;
+	}
+}
+
+@keyframes splash-third-movement {
+	0% {
+		top: 100%;
+		left: 30%;
+	}
+	25% {
+		left: 85%;
+	}
+	50% {
+		top: 0;
+	}
+	75% {
+		left: 15%;
+	}
+	100% {
+		top: 100%;
+		left: 50%;
+	}
+}

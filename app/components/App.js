@@ -1,6 +1,7 @@
 import React from 'react'
 import PurchaseButton from './PurchaseButton'
 import ProductPage from './ProductPage'
+import MathPlosion from './Board'
 
 // <PurchaseButton 
 // 					ticketsLeft={this.state.ticketsLeft}
@@ -13,7 +14,7 @@ class App extends React.Component {
 		this.state = {
 			ticketsLeft: 10,
 			ticketsTotal: 100,
-			isDataReady: false,
+			isDataReady: true,
 			backgroundPic: 'url',
 			showModal: false
 		}
@@ -36,11 +37,7 @@ class App extends React.Component {
 
 		return (
 			<div>
-				<ProductPage 
-					ticketsLeft={this.state.ticketsLeft}
-					ticketsTotal={this.state.ticketsTotal}
-					howManyFucksToGive={'zero'}
-				/>
+				<MathPlosion />
 			</div>
 		)
 	}
